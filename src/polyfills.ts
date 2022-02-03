@@ -1,3 +1,5 @@
+import 'd3-scale'
+import 'd3-selection'
 /**
  * This file includes polyfills needed by Angular and is loaded before the app.
  * You can add your own extra polyfills to this file.

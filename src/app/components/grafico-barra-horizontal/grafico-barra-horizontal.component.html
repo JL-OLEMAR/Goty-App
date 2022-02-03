@@ -1,1 +1,17 @@
-<p>grafico-barra-horizontal works!</p>
+<div class="chart-container">
+  <ngx-charts-bar-horizontal
+    (select)="onSelect($event)"
+    [gradient]="gradient"
+    [legend]="showLegend"
+    [results]="results"
+    [scheme]="colorScheme"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxis]="showXAxis"
+    [xAxisLabel]="xAxisLabel"
+    [yAxis]="showYAxis"
+    [yAxisLabel]="yAxisLabel"
+    style="fill: grey"
+  >
+  </ngx-charts-bar-horizontal>
+</div>
