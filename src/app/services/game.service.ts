@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { Observable, of } from 'rxjs'
-import { tap } from 'rxjs/operators'
+import { tap, catchError } from 'rxjs/operators'
 
 import { environment } from '../../environments/environment'
 import { Game } from 'interfaces/getGoty.interface'
@@ -26,5 +26,10 @@ export class GameService {
       return this._http.get<Game[]>(`${baseURl}/goty`)
         .pipe(tap(games => (this._games = games)))
     }
+  }
+
+  voteGame (id: string): Observable<any> {
+    return this._http.post(`${baseURl}/goty/${id}`, {})
+      .pipe(catchError(err => { return of(err.error) }))
   }
 }
