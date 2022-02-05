@@ -41,13 +41,12 @@ export class GraficoBarraHorizontalComponent implements OnDestroy {
 
   constructor () {
     this._intervalo = setInterval(() => {
-      console.log('jose')
       const newResults = [...this.results]
       for (const i in newResults) {
         newResults[i].value = Math.round(Math.random() * 500)
       }
       this.results = [...newResults]
-    }, 5000)
+    }, 10000)
   }
 
   ngOnDestroy (): void {
