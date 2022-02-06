@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators'
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
-  public goty: any[] = []
+  public games: any[] = []
 
   constructor (private readonly _firestore: AngularFirestore) { }
 
@@ -17,6 +17,6 @@ export class InicioComponent implements OnInit {
       .pipe(map((resp) => {
         return resp.map((resp: any) => ({ name: resp.name, value: resp.votos }))
       }))
-      .subscribe((goty: any) => { this.goty = goty })
+      .subscribe((games: any) => { this.games = games })
   }
 }
