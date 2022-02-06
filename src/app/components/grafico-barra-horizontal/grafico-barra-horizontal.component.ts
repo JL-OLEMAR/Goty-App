@@ -7,7 +7,7 @@ import { Component, OnDestroy } from '@angular/core'
   styleUrls: ['./grafico-barra-horizontal.component.css']
 })
 export class GraficoBarraHorizontalComponent implements OnDestroy {
-  private readonly _intervalo!: any
+  // private readonly _intervalo!: any
   // data
   results: any[] = [
     {
@@ -40,17 +40,18 @@ export class GraficoBarraHorizontalComponent implements OnDestroy {
   yAxisLabel = 'Juegos'
 
   constructor () {
-    this._intervalo = setInterval(() => {
-      const newResults = [...this.results]
-      for (const i in newResults) {
-        newResults[i].value = Math.round(Math.random() * 500)
-      }
-      this.results = [...newResults]
-    }, 10000)
+    // this._intervalo = setInterval(() => {
+    //   const newResults = [...this.results]
+    //   for (const i in newResults) {
+    //     newResults[i].value = Math.round(Math.random() * 500)
+    //   }
+    //   this.results = [...newResults]
+    // }, 10000)
+    console.log('jose')
   }
 
   ngOnDestroy (): void {
-    clearInterval(this._intervalo)
+    // clearInterval(this._intervalo)
   }
 
   onSelect (event: any): void {

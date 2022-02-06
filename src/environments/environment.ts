@@ -4,7 +4,15 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:5000/firestore-grafica-angula-ecb3c/us-central1/api'
+  baseUrl: 'http://localhost:5000/firestore-grafica-angula-ecb3c/us-central1/api',
+  firebase: {
+    apiKey: 'AIzaSyCBQG3MdQuWtfKOFc90u64RIK9hjeqwlvI',
+    authDomain: 'firestore-grafica-angula-ecb3c.firebaseapp.com',
+    projectId: 'firestore-grafica-angula-ecb3c',
+    storageBucket: 'firestore-grafica-angula-ecb3c.appspot.com',
+    messagingSenderId: '191756500131',
+    appId: '1:191756500131:web:09b152f50a80c3d0215316'
+  }
 }
 
 /*
