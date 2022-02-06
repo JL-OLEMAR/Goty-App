@@ -2,8 +2,8 @@
 import { Component, OnInit } from '@angular/core'
 import Swal from 'sweetalert2'
 
-import { Game } from 'interfaces/getGoty.interface'
-import { GameService } from 'services/game.service'
+import { Game } from '../../interfaces/getGoty.interface'
+import { GameService } from '../../services/game.service'
 
 @Component({
   selector: 'app-goty',

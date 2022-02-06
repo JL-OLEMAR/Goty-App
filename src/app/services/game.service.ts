@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs'
 import { tap, catchError } from 'rxjs/operators'
 
 import { environment } from '../../environments/environment'
-import { Game } from 'interfaces/getGoty.interface'
+import { Game } from '../interfaces/getGoty.interface'
 
 const baseURl = environment.baseUrl
 

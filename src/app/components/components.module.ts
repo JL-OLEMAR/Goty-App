@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { RouterModule } from '@angular/router'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-
-// Modules
 import { NgxChartsModule } from '@swimlane/ngx-charts'
 
 // Components
